@@ -33,7 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.currentStudent = [[SPStudent alloc] init];
+	self.currentStudent = [[FibricStudent alloc] init];
     
     // Enables the user to stop editing the text field when they tap outside the field
     UITapGestureRecognizer *tapScroll = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapped)];
@@ -51,18 +51,18 @@
 #pragma mark - Saving input as properties of currentStudent
 
 - (IBAction)firstNameEdited:(id)sender {
-    self.currentStudent.firstName = self.firstNameInputField.text;  // text from UITextView stored as a property in an object of type SPStudent
-    self.studentNameDisplay.text = [self.currentStudent firstName]; // property displayed in label for debugging purposes
+    self.currentStudent.studentFirstName = self.firstNameInputField.text;  // text from UITextView stored as a property in an object of type SPStudent
+    self.studentNameDisplay.text = [self.currentStudent studentFirstName]; // property displayed in label for debugging purposes
 }
 
 - (IBAction)lastNameEdited:(id)sender {
-    self.currentStudent.lastName = self.lastNameInputField.text;
-    self.studentNameDisplay.text = [self.currentStudent lastName];
+    self.currentStudent.studentLastName = self.lastNameInputField.text;
+    self.studentNameDisplay.text = [self.currentStudent studentLastName];
 }
 
 - (IBAction)classNameEdited:(id)sender {
-    self.currentStudent.className = self.classNameInputField.text;
-    self.studentNameDisplay.text = [self.currentStudent className];
+    self.currentStudent.yourClass = self.classNameInputField.text;
+    self.studentNameDisplay.text = [self.currentStudent yourClass];
 }
 
 
@@ -85,7 +85,8 @@
 #pragma mark - Passing currentStudent to SPHomeViewController via delegate
 
 - (IBAction)saveNewStudent {
-    [self.delegate addStudentToArray:self];
+    NSLog
+    //[self.delegate addStudentToArray:self];
 }
 
 @end
