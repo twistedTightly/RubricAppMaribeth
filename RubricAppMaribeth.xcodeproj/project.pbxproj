@@ -19,6 +19,7 @@
 		6A6FB4D516FCBBBA0093916F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6FB4D316FCBBBA0093916F /* MainStoryboard_iPhone.storyboard */; };
 		6A6FB4D816FCBBBA0093916F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6FB4D616FCBBBA0093916F /* MainStoryboard_iPad.storyboard */; };
 		6A6FB4DB16FCBBBA0093916F /* FibricHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6FB4DA16FCBBBA0093916F /* FibricHomeViewController.m */; };
+		6A6FB4EC16FCC1DF0093916F /* FibricCreateStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6FB4EB16FCC1DF0093916F /* FibricCreateStudentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		6A6FB4D716FCBBBA0093916F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		6A6FB4D916FCBBBA0093916F /* FibricHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibricHomeViewController.h; sourceTree = "<group>"; };
 		6A6FB4DA16FCBBBA0093916F /* FibricHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibricHomeViewController.m; sourceTree = "<group>"; };
+		6A6FB4EA16FCC1DF0093916F /* FibricCreateStudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FibricCreateStudentViewController.h; sourceTree = "<group>"; };
+		6A6FB4EB16FCC1DF0093916F /* FibricCreateStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FibricCreateStudentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				6A6FB4E116FCC0670093916F /* Home Screen */,
+				6A6FB4ED16FCC1E50093916F /* Create Student Screen */,
 				6A6FB4CA16FCBBBA0093916F /* FibricAppDelegate.h */,
 				6A6FB4CB16FCBBBA0093916F /* FibricAppDelegate.m */,
 				6A6FB4D316FCBBBA0093916F /* MainStoryboard_iPhone.storyboard */,
@@ -116,6 +120,15 @@
 				6A6FB4DA16FCBBBA0093916F /* FibricHomeViewController.m */,
 			);
 			name = "Home Screen";
+			sourceTree = "<group>";
+		};
+		6A6FB4ED16FCC1E50093916F /* Create Student Screen */ = {
+			isa = PBXGroup;
+			children = (
+				6A6FB4EA16FCC1DF0093916F /* FibricCreateStudentViewController.h */,
+				6A6FB4EB16FCC1DF0093916F /* FibricCreateStudentViewController.m */,
+			);
+			name = "Create Student Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +202,7 @@
 				6A6FB4C816FCBBBA0093916F /* main.m in Sources */,
 				6A6FB4CC16FCBBBA0093916F /* FibricAppDelegate.m in Sources */,
 				6A6FB4DB16FCBBBA0093916F /* FibricHomeViewController.m in Sources */,
+				6A6FB4EC16FCC1DF0093916F /* FibricCreateStudentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

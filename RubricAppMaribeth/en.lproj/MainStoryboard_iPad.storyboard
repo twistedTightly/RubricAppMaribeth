@@ -17,7 +17,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWC-Kh-X8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1765" y="-194"/>
+            <point key="canvasLocation" x="-3381" y="22"/>
         </scene>
         <!--Fibric Home View Controller-->
         <scene sceneID="4">
@@ -60,15 +60,111 @@
                     </view>
                     <navigationItem key="navigationItem" id="qcN-4O-zLq"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="MJB-WQ-TXR" kind="push" id="0Hk-Hl-uHe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-576" y="-194"/>
+            <point key="canvasLocation" x="-2192" y="22"/>
+        </scene>
+        <!--Fibric Create Student View Controller - Create or Edit a Student-->
+        <scene sceneID="MMa-46-zuc">
+            <objects>
+                <viewController id="MJB-WQ-TXR" customClass="FibricCreateStudentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eTp-W1-ifz">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="firstNameInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VdY-WY-YUL">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="4yZ-Ph-OIE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="lastNameInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kKS-Vk-Ezp">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="classNameInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DEPT20201" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RfO-Ic-QZh">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cz-6r-I4I">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="QWk-qN-bou"/>
+                                    <constraint firstAttribute="width" constant="78" id="tE8-zd-nLs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveNewStudent" destination="MJB-WQ-TXR" eventType="touchUpInside" id="NjM-hg-qZE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qh-su-3zC">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="2i3-ef-vlf"/>
+                                    <constraint firstAttribute="height" constant="25" id="ugp-lM-SkM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kKS-Vk-Ezp" firstAttribute="trailing" secondItem="RfO-Ic-QZh" secondAttribute="trailing" type="default" id="SJv-Yi-4oQ"/>
+                            <constraint firstItem="kKS-Vk-Ezp" firstAttribute="leading" secondItem="RfO-Ic-QZh" secondAttribute="leading" type="default" id="Upu-F6-ygX"/>
+                            <constraint firstAttribute="bottom" secondItem="8Cz-6r-I4I" secondAttribute="bottom" constant="309" id="WaY-Im-CUV"/>
+                            <constraint firstItem="kKS-Vk-Ezp" firstAttribute="top" secondItem="eTp-W1-ifz" secondAttribute="top" constant="234" id="c0W-a5-R3L"/>
+                            <constraint firstItem="RfO-Ic-QZh" firstAttribute="top" secondItem="eTp-W1-ifz" secondAttribute="top" constant="291" id="cGe-k4-r2P"/>
+                            <constraint firstItem="9Qh-su-3zC" firstAttribute="leading" secondItem="eTp-W1-ifz" secondAttribute="leading" constant="182" id="mrb-Sr-ORv"/>
+                            <constraint firstItem="8Cz-6r-I4I" firstAttribute="centerX" secondItem="eTp-W1-ifz" secondAttribute="centerX" type="default" id="saL-sS-6bk"/>
+                            <constraint firstItem="9Qh-su-3zC" firstAttribute="top" secondItem="eTp-W1-ifz" secondAttribute="top" constant="236" id="sco-uC-T3t"/>
+                            <constraint firstItem="VdY-WY-YUL" firstAttribute="top" secondItem="eTp-W1-ifz" secondAttribute="top" constant="177" id="ueg-5I-wDO"/>
+                            <constraint firstItem="8Cz-6r-I4I" firstAttribute="centerX" secondItem="RfO-Ic-QZh" secondAttribute="centerX" type="default" id="wfE-jY-JAR"/>
+                            <constraint firstItem="VdY-WY-YUL" firstAttribute="trailing" secondItem="kKS-Vk-Ezp" secondAttribute="trailing" type="default" id="wr4-h9-jAB"/>
+                            <constraint firstItem="kKS-Vk-Ezp" firstAttribute="leading" secondItem="VdY-WY-YUL" secondAttribute="leading" type="default" id="yKP-WR-hTw"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create or Edit a Student" id="jcm-7H-G1m"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="studentNameDisplay" destination="9Qh-su-3zC" id="G3D-8p-Avx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="su8-99-97u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-451" y="-901"/>
         </scene>
     </scenes>
     <classes>
+        <class className="FibricCreateStudentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FibricCreateStudentViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="classNameEdited:"/>
+                <relationship kind="action" name="firstNameEdited:"/>
+                <relationship kind="action" name="lastNameEdited:"/>
+                <relationship kind="outlet" name="classNameInputField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="delegate"/>
+                <relationship kind="outlet" name="firstNameInputField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="lastNameInputField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="studentNameDisplay" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="FibricHomeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FibricHomeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="studentPropertyDisplay" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
