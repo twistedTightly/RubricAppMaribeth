@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A6FB4BC16FCBBBA0093916F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6FB4BB16FCBBBA0093916F /* UIKit.framework */; };
+		6A6FB4BE16FCBBBA0093916F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6FB4BD16FCBBBA0093916F /* Foundation.framework */; };
+		6A6FB4C016FCBBBA0093916F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6FB4BF16FCBBBA0093916F /* CoreGraphics.framework */; };
+		6A6FB4C616FCBBBA0093916F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A6FB4C416FCBBBA0093916F /* InfoPlist.strings */; };
+		6A6FB4C816FCBBBA0093916F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6FB4C716FCBBBA0093916F /* main.m */; };
+		6A6FB4CC16FCBBBA0093916F /* FibricAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6FB4CB16FCBBBA0093916F /* FibricAppDelegate.m */; };
+		6A6FB4CE16FCBBBA0093916F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A6FB4CD16FCBBBA0093916F /* Default.png */; };
+		6A6FB4D016FCBBBA0093916F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A6FB4CF16FCBBBA0093916F /* Default@2x.png */; };
+		6A6FB4D216FCBBBA0093916F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A6FB4D116FCBBBA0093916F /* Default-568h@2x.png */; };
+		6A6FB4D516FCBBBA0093916F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6FB4D316FCBBBA0093916F /* MainStoryboard_iPhone.storyboard */; };
+		6A6FB4D816FCBBBA0093916F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6FB4D616FCBBBA0093916F /* MainStoryboard_iPad.storyboard */; };
+		6A6FB4DB16FCBBBA0093916F /* FibricHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6FB4DA16FCBBBA0093916F /* FibricHomeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A6FB4B816FCBBBA0093916F /* RubricAppMaribeth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubricAppMaribeth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A6FB4BB16FCBBBA0093916F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6A6FB4BD16FCBBBA0093916F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6A6FB4BF16FCBBBA0093916F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6A6FB4C316FCBBBA0093916F /* RubricAppMaribeth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RubricAppMaribeth-Info.plist"; sourceTree = "<group>"; };
+		6A6FB4C516FCBBBA0093916F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A6FB4C716FCBBBA0093916F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A6FB4C916FCBBBA0093916F /* RubricAppMaribeth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RubricAppMaribeth-Prefix.pch"; sourceTree = "<group>"; };
+		6A6FB4CA16FCBBBA0093916F /* FibricAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibricAppDelegate.h; sourceTree = "<group>"; };
+		6A6FB4CB16FCBBBA0093916F /* FibricAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibricAppDelegate.m; sourceTree = "<group>"; };
+		6A6FB4CD16FCBBBA0093916F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6A6FB4CF16FCBBBA0093916F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6A6FB4D116FCBBBA0093916F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6A6FB4D416FCBBBA0093916F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		6A6FB4D716FCBBBA0093916F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		6A6FB4D916FCBBBA0093916F /* FibricHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FibricHomeViewController.h; sourceTree = "<group>"; };
+		6A6FB4DA16FCBBBA0093916F /* FibricHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibricHomeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A6FB4B516FCBBBA0093916F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6FB4BC16FCBBBA0093916F /* UIKit.framework in Frameworks */,
+				6A6FB4BE16FCBBBA0093916F /* Foundation.framework in Frameworks */,
+				6A6FB4C016FCBBBA0093916F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A6FB4AF16FCBBBA0093916F = {
+			isa = PBXGroup;
+			children = (
+				6A6FB4C116FCBBBA0093916F /* RubricAppMaribeth */,
+				6A6FB4BA16FCBBBA0093916F /* Frameworks */,
+				6A6FB4B916FCBBBA0093916F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A6FB4B916FCBBBA0093916F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A6FB4B816FCBBBA0093916F /* RubricAppMaribeth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A6FB4BA16FCBBBA0093916F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A6FB4BB16FCBBBA0093916F /* UIKit.framework */,
+				6A6FB4BD16FCBBBA0093916F /* Foundation.framework */,
+				6A6FB4BF16FCBBBA0093916F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A6FB4C116FCBBBA0093916F /* RubricAppMaribeth */ = {
+			isa = PBXGroup;
+			children = (
+				6A6FB4E116FCC0670093916F /* Home Screen */,
+				6A6FB4CA16FCBBBA0093916F /* FibricAppDelegate.h */,
+				6A6FB4CB16FCBBBA0093916F /* FibricAppDelegate.m */,
+				6A6FB4D316FCBBBA0093916F /* MainStoryboard_iPhone.storyboard */,
+				6A6FB4D616FCBBBA0093916F /* MainStoryboard_iPad.storyboard */,
+				6A6FB4C216FCBBBA0093916F /* Supporting Files */,
+			);
+			path = RubricAppMaribeth;
+			sourceTree = "<group>";
+		};
+		6A6FB4C216FCBBBA0093916F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A6FB4C316FCBBBA0093916F /* RubricAppMaribeth-Info.plist */,
+				6A6FB4C416FCBBBA0093916F /* InfoPlist.strings */,
+				6A6FB4C716FCBBBA0093916F /* main.m */,
+				6A6FB4C916FCBBBA0093916F /* RubricAppMaribeth-Prefix.pch */,
+				6A6FB4CD16FCBBBA0093916F /* Default.png */,
+				6A6FB4CF16FCBBBA0093916F /* Default@2x.png */,
+				6A6FB4D116FCBBBA0093916F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A6FB4E116FCC0670093916F /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				6A6FB4D916FCBBBA0093916F /* FibricHomeViewController.h */,
+				6A6FB4DA16FCBBBA0093916F /* FibricHomeViewController.m */,
+			);
+			name = "Home Screen";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A6FB4B716FCBBBA0093916F /* RubricAppMaribeth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A6FB4DE16FCBBBA0093916F /* Build configuration list for PBXNativeTarget "RubricAppMaribeth" */;
+			buildPhases = (
+				6A6FB4B416FCBBBA0093916F /* Sources */,
+				6A6FB4B516FCBBBA0093916F /* Frameworks */,
+				6A6FB4B616FCBBBA0093916F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RubricAppMaribeth;
+			productName = RubricAppMaribeth;
+			productReference = 6A6FB4B816FCBBBA0093916F /* RubricAppMaribeth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A6FB4B016FCBBBA0093916F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Fibric;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Maribeth Rauh";
+			};
+			buildConfigurationList = 6A6FB4B316FCBBBA0093916F /* Build configuration list for PBXProject "RubricAppMaribeth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6A6FB4AF16FCBBBA0093916F;
+			productRefGroup = 6A6FB4B916FCBBBA0093916F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A6FB4B716FCBBBA0093916F /* RubricAppMaribeth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A6FB4B616FCBBBA0093916F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6FB4C616FCBBBA0093916F /* InfoPlist.strings in Resources */,
+				6A6FB4CE16FCBBBA0093916F /* Default.png in Resources */,
+				6A6FB4D016FCBBBA0093916F /* Default@2x.png in Resources */,
+				6A6FB4D216FCBBBA0093916F /* Default-568h@2x.png in Resources */,
+				6A6FB4D516FCBBBA0093916F /* MainStoryboard_iPhone.storyboard in Resources */,
+				6A6FB4D816FCBBBA0093916F /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A6FB4B416FCBBBA0093916F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6FB4C816FCBBBA0093916F /* main.m in Sources */,
+				6A6FB4CC16FCBBBA0093916F /* FibricAppDelegate.m in Sources */,
+				6A6FB4DB16FCBBBA0093916F /* FibricHomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6A6FB4C416FCBBBA0093916F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A6FB4C516FCBBBA0093916F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6A6FB4D316FCBBBA0093916F /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A6FB4D416FCBBBA0093916F /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6A6FB4D616FCBBBA0093916F /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A6FB4D716FCBBBA0093916F /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A6FB4DC16FCBBBA0093916F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A6FB4DD16FCBBBA0093916F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A6FB4DF16FCBBBA0093916F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RubricAppMaribeth/RubricAppMaribeth-Prefix.pch";
+				INFOPLIST_FILE = "RubricAppMaribeth/RubricAppMaribeth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6A6FB4E016FCBBBA0093916F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RubricAppMaribeth/RubricAppMaribeth-Prefix.pch";
+				INFOPLIST_FILE = "RubricAppMaribeth/RubricAppMaribeth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A6FB4B316FCBBBA0093916F /* Build configuration list for PBXProject "RubricAppMaribeth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6FB4DC16FCBBBA0093916F /* Debug */,
+				6A6FB4DD16FCBBBA0093916F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A6FB4DE16FCBBBA0093916F /* Build configuration list for PBXNativeTarget "RubricAppMaribeth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6FB4DF16FCBBBA0093916F /* Debug */,
+				6A6FB4E016FCBBBA0093916F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A6FB4B016FCBBBA0093916F /* Project object */;
+}
