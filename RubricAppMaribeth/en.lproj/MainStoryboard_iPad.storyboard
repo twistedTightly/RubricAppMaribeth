@@ -36,6 +36,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="MJB-WQ-TXR" kind="push" id="TDQ-11-B0g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExZ-Mr-MSh">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -60,9 +63,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="qcN-4O-zLq"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <segue destination="MJB-WQ-TXR" kind="push" id="0Hk-Hl-uHe"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,14 +82,23 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                <connections>
+                                    <action selector="firstNameEdited:" destination="MJB-WQ-TXR" eventType="editingDidEnd" id="AZf-tR-AbH"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="lastNameInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kKS-Vk-Ezp">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                <connections>
+                                    <action selector="lastNameEdited:" destination="MJB-WQ-TXR" eventType="editingDidEnd" id="Nbk-dx-Tmq"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="classNameInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DEPT20201" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RfO-Ic-QZh">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <connections>
+                                    <action selector="classNameEdited:" destination="MJB-WQ-TXR" eventType="editingDidEnd" id="P4b-ej-7yQ"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cz-6r-I4I">
                                 <constraints>
@@ -138,12 +147,15 @@
                     <navigationItem key="navigationItem" title="Create or Edit a Student" id="jcm-7H-G1m"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="studentNameDisplay" destination="9Qh-su-3zC" id="G3D-8p-Avx"/>
+                        <outlet property="classNameInputField" destination="RfO-Ic-QZh" id="bob-h3-7ee"/>
+                        <outlet property="firstNameInputField" destination="VdY-WY-YUL" id="AJo-gt-rG7"/>
+                        <outlet property="lastNameInputField" destination="kKS-Vk-Ezp" id="K9Z-mB-f7u"/>
+                        <outlet property="studentNameDisplay" destination="9Qh-su-3zC" id="5yy-P4-0dP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="su8-99-97u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-451" y="-901"/>
+            <point key="canvasLocation" x="-959" y="-515"/>
         </scene>
     </scenes>
     <classes>
@@ -154,7 +166,6 @@
                 <relationship kind="action" name="firstNameEdited:"/>
                 <relationship kind="action" name="lastNameEdited:"/>
                 <relationship kind="outlet" name="classNameInputField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="delegate"/>
                 <relationship kind="outlet" name="firstNameInputField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="lastNameInputField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="studentNameDisplay" candidateClass="UILabel"/>

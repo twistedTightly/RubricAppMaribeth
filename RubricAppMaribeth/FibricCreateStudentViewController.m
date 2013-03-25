@@ -85,8 +85,7 @@
 #pragma mark - Passing currentStudent to SPHomeViewController via delegate
 
 - (IBAction)saveNewStudent {
-    NSLog
-    //[self.delegate addStudentToArray:self];
+    //[self.delegate addStudentToArray:self.currentStudent];
 }
 
 @end

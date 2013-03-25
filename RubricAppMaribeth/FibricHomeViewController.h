@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FibricStudent.h"
+#import "FibricCreateStudentViewController.h"
 
 @interface FibricHomeViewController : UIViewController
 
