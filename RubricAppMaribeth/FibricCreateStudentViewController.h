@@ -9,15 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "FibricStudent.h"
 
-//@protocol saveStudentDelegate
-//
-//- (void) addStudentToArray: (FibricStudent *) sender;
-//
-//@end
+@protocol saveStudentDelegate
+
+- (void) addStudentToArray: (FibricStudent *) sender;
+
+@end
 
 @interface FibricCreateStudentViewController : UIViewController {
 }
 
-//@property (nonatomic, weak) IBOutlet id <saveStudentDelegate> delegate;
+@property (nonatomic, strong) IBOutlet id <saveStudentDelegate> delegate;
 
 @end

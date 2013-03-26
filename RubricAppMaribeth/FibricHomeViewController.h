@@ -10,6 +10,6 @@
 #import "FibricStudent.h"
 #import "FibricCreateStudentViewController.h"
 
-@interface FibricHomeViewController : UIViewController
+@interface FibricHomeViewController : UIViewController <saveStudentDelegate>
 
 @end

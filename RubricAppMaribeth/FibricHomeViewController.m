@@ -37,13 +37,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if ([[segue identifier] isEqualToString:@"createStudentSegue"]) {
-//        FibricCreateStudentViewController * studentViewController = [segue destinationViewController];
-//        studentViewController.delegate = self;
-//    }
-//    [super prepareForSegue:segue sender:sender];
-//}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"createStudentSegue"]) {
+        FibricCreateStudentViewController * studentViewController = [segue destinationViewController];
+        studentViewController.delegate = self;
+    }
+    [super prepareForSegue:segue sender:sender];
+}
 
 
 #pragma mark - Setters/Getters overridden
@@ -70,8 +70,8 @@
 
 #pragma mark - Model Methods
 
-//- (void) addStudentToArray:(FibricStudent *)sender {
-//    NSLog(@"Done button tapped!");
-//}
+- (void) addStudentToArray:(FibricStudent *)sender {
+    NSLog(@"Done button tapped!");
+}
 
 @end
