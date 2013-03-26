@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *classNameInputField;
 @property (weak, nonatomic) IBOutlet UILabel *studentNameDisplay;
 
+//@property (nonatomic, retain) UIBarButtonItem *doneButton;
+
 @property (strong, nonatomic) FibricStudent *currentStudent;
 
 @end
@@ -39,6 +41,15 @@
     UITapGestureRecognizer *tapScroll = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapped)];
     tapScroll.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapScroll];
+    
+    // Attempting to make done button that functions the same as the currently implemented one *in the navigation bar*
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done"
+//                                                       style:UIBarButtonItemStyleBordered
+//                                                      target:nil
+//                                                      action:nil];
+//    self.doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:nil];
+//    self.navigationItem.rightBarButtonItem = self.doneButton;
+//    self.doneButton.action = @selector(saveNewStudent:);
 }
 
 - (void)didReceiveMemoryWarning

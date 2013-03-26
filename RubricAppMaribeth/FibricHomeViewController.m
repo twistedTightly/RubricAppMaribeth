@@ -72,6 +72,8 @@
 
 - (void) addStudentToArray:(FibricStudent *)sender {
     NSLog(@"Done button tapped!");
+    [self.students addObject:sender];
+    self.studentPropertyDisplay.text = ((FibricStudent *)[self.students objectAtIndex:0]).studentFirstName;
     
 }
 

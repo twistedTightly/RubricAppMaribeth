@@ -50,6 +50,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWt-nk-vnM">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -58,11 +63,16 @@
                             <constraint firstItem="RnI-Ki-iYW" firstAttribute="trailing" secondItem="ExZ-Mr-MSh" secondAttribute="trailing" type="default" id="LhH-lg-bYW"/>
                             <constraint firstAttribute="bottom" secondItem="ExZ-Mr-MSh" secondAttribute="bottom" constant="106" id="Ser-kg-ph2"/>
                             <constraint firstItem="ExZ-Mr-MSh" firstAttribute="leading" secondItem="RnI-Ki-iYW" secondAttribute="leading" type="default" id="gcF-Tz-vtu"/>
+                            <constraint firstItem="dWt-nk-vnM" firstAttribute="centerX" secondItem="5" secondAttribute="centerX" type="default" id="jLq-Tu-cbx"/>
+                            <constraint firstItem="dWt-nk-vnM" firstAttribute="top" secondItem="5" secondAttribute="top" constant="228" id="xxL-Xy-aZ9"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="qcN-4O-zLq"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="studentPropertyDisplay" destination="dWt-nk-vnM" id="ih3-zp-ygv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
