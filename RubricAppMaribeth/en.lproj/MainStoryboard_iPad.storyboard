@@ -37,7 +37,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MJB-WQ-TXR" kind="push" id="TDQ-11-B0g"/>
+                                    <segue destination="MJB-WQ-TXR" kind="push" identifier="createStudentSegue" id="TDQ-11-B0g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExZ-Mr-MSh">
@@ -115,7 +115,7 @@
                                 </state>
                                 <connections>
                                     <action selector="saveNewStudent" destination="MJB-WQ-TXR" eventType="touchUpInside" id="NjM-hg-qZE"/>
-                                    <segue destination="2" kind="push" id="LhK-pv-yIt"/>
+                                    <segue destination="2" kind="push" identifier="createStudentReturnSegue" id="LhK-pv-yIt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qh-su-3zC">
