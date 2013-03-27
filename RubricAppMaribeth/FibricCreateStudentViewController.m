@@ -87,7 +87,7 @@
 
 // Ends editing on touch outside of field - input will be saved, keyboard will be dismissed
 - (void) tapped {
-    NSLog(@"tapped to end editing method");
+    //NSLog(@"tapped to end editing method");
     [self.view endEditing:YES];
 }
 
@@ -96,8 +96,9 @@
 #pragma mark - Passing currentStudent to SPHomeViewController via delegate
 
 - (IBAction)saveNewStudent {
-    NSLog(@"delegate method called");
+    //NSLog(@"delegate method called");
     [self.delegate addStudentToArray:self.currentStudent];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
