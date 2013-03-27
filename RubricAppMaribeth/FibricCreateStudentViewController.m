@@ -15,8 +15,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *classNameInputField;
 @property (weak, nonatomic) IBOutlet UILabel *studentNameDisplay;
 
-//@property (nonatomic, retain) UIBarButtonItem *doneButton;
-
 @property (strong, nonatomic) FibricStudent *currentStudent;
 
 @end
@@ -42,14 +40,13 @@
     tapScroll.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapScroll];
     
-    // Attempting to make done button that functions the same as the currently implemented one *in the navigation bar*
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done"
-//                                                       style:UIBarButtonItemStyleBordered
-//                                                      target:nil
-//                                                      action:nil];
-//    self.doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:nil];
-//    self.navigationItem.rightBarButtonItem = self.doneButton;
-//    self.doneButton.action = @selector(saveNewStudent:);
+    // Done button that functions the same as the formerly implemented one BUT *in the navigation bar*
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done"/*NSLocalizedString(@"AddTitle", @"")*/
+																   style:UIBarButtonItemStyleBordered
+																  target:self
+																  action:@selector(saveNewStudent:)];
+    self.navigationItem.rightBarButtonItem = doneButton;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -95,7 +92,7 @@
 
 #pragma mark - Passing currentStudent to SPHomeViewController via delegate
 
-- (IBAction)saveNewStudent {
+- (IBAction)saveNewStudent:(id)sender {
     //NSLog(@"delegate method called");
     [self.delegate addStudentToArray:self.currentStudent];
     [self.navigationController popViewControllerAnimated:YES];

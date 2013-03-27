@@ -8,12 +8,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubricAppMaribeth/FibricCreateStudentViewController.m"
-         timestampString = "386103955.836985"
+         timestampString = "386105812.021934"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "100"
-         endingLineNumber = "100"
-         landmarkName = "-saveNewStudent"
+         startingLineNumber = "97"
+         endingLineNumber = "97"
+         landmarkName = "-saveNewStudent:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
