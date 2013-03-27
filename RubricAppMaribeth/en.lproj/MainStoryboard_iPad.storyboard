@@ -94,6 +94,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <connections>
                                     <action selector="firstNameEdited:" destination="MJB-WQ-TXR" eventType="editingDidEnd" id="AZf-tR-AbH"/>
+                                    <outlet property="delegate" destination="MJB-WQ-TXR" id="Oyi-7z-bZd"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="lastNameInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kKS-Vk-Ezp">
@@ -101,6 +102,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <connections>
                                     <action selector="lastNameEdited:" destination="MJB-WQ-TXR" eventType="editingDidEnd" id="Nbk-dx-Tmq"/>
+                                    <outlet property="delegate" destination="MJB-WQ-TXR" id="FxY-yA-4ro"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="classNameInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DEPT20201" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RfO-Ic-QZh">
@@ -108,6 +110,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                 <connections>
                                     <action selector="classNameEdited:" destination="MJB-WQ-TXR" eventType="editingDidEnd" id="P4b-ej-7yQ"/>
+                                    <outlet property="delegate" destination="MJB-WQ-TXR" id="9db-xB-spS"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cz-6r-I4I">
