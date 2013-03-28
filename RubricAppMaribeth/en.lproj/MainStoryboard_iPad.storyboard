@@ -41,6 +41,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExZ-Mr-MSh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="ZVL-cc-J6X"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Create Rubric">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -58,23 +61,43 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Kuk-zr-7rk">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="0Uo-Uh-seP"/>
+                                    <constraint firstAttribute="height" constant="387" id="1Vc-pS-6aG"/>
+                                </constraints>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Dfh-7c-Qga">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="4ix-le-0t0"/>
+                                </constraints>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="RnI-Ki-iYW" secondAttribute="trailing" constant="188" id="5F0-k8-1Ny"/>
-                            <constraint firstAttribute="bottom" secondItem="RnI-Ki-iYW" secondAttribute="bottom" constant="178" id="8OU-43-3CT"/>
-                            <constraint firstItem="RnI-Ki-iYW" firstAttribute="trailing" secondItem="ExZ-Mr-MSh" secondAttribute="trailing" type="default" id="LhH-lg-bYW"/>
-                            <constraint firstAttribute="bottom" secondItem="ExZ-Mr-MSh" secondAttribute="bottom" constant="106" id="Ser-kg-ph2"/>
-                            <constraint firstItem="ExZ-Mr-MSh" firstAttribute="leading" secondItem="RnI-Ki-iYW" secondAttribute="leading" type="default" id="gcF-Tz-vtu"/>
-                            <constraint firstItem="dWt-nk-vnM" firstAttribute="centerX" secondItem="5" secondAttribute="centerX" type="default" id="jLq-Tu-cbx"/>
-                            <constraint firstItem="dWt-nk-vnM" firstAttribute="top" secondItem="5" secondAttribute="top" constant="228" id="xxL-Xy-aZ9"/>
+                            <constraint firstItem="Dfh-7c-Qga" firstAttribute="bottom" secondItem="Kuk-zr-7rk" secondAttribute="bottom" type="default" id="2bH-4R-wEK"/>
+                            <constraint firstItem="ExZ-Mr-MSh" firstAttribute="baseline" secondItem="RnI-Ki-iYW" secondAttribute="baseline" type="default" id="3C9-Gv-Faf"/>
+                            <constraint firstAttribute="bottom" secondItem="dWt-nk-vnM" secondAttribute="bottom" constant="37" id="Gh1-fm-KCU"/>
+                            <constraint firstItem="ExZ-Mr-MSh" firstAttribute="top" secondItem="RnI-Ki-iYW" secondAttribute="top" type="default" id="WSS-wA-Hhf"/>
+                            <constraint firstItem="Dfh-7c-Qga" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="437" id="XcX-10-LQh"/>
+                            <constraint firstItem="RnI-Ki-iYW" firstAttribute="leading" secondItem="Kuk-zr-7rk" secondAttribute="leading" type="default" id="YwX-ck-cqu"/>
+                            <constraint firstItem="RnI-Ki-iYW" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="81" id="dQh-bj-oHq"/>
+                            <constraint firstAttribute="bottom" secondItem="RnI-Ki-iYW" secondAttribute="bottom" constant="168" id="jvo-cZ-9zL"/>
+                            <constraint firstItem="dWt-nk-vnM" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="42" id="kLk-P4-nDs"/>
+                            <constraint firstItem="Dfh-7c-Qga" firstAttribute="top" secondItem="Kuk-zr-7rk" secondAttribute="top" type="default" id="kWc-Sf-r2y"/>
+                            <constraint firstItem="Kuk-zr-7rk" firstAttribute="top" secondItem="5" secondAttribute="top" constant="60" id="p77-d5-QEN"/>
+                            <constraint firstItem="ExZ-Mr-MSh" firstAttribute="leading" secondItem="Dfh-7c-Qga" secondAttribute="leading" type="default" id="zJb-ZW-Zsx"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="qcN-4O-zLq"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="rubricsTableView" destination="Dfh-7c-Qga" id="zhR-ny-mKT"/>
                         <outlet property="studentPropertyDisplay" destination="dWt-nk-vnM" id="ih3-zp-ygv"/>
+                        <outlet property="studentsTableView" destination="Kuk-zr-7rk" id="qdf-jJ-421"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
@@ -187,6 +210,36 @@
             <point key="canvasLocation" x="-1569" y="-912"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="FibricCreateObjectivesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FibricCreateObjectivesViewController.h"/>
+        </class>
+        <class className="FibricCreateStudentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FibricCreateStudentViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="classNameEdited:"/>
+                <relationship kind="action" name="firstNameEdited:"/>
+                <relationship kind="action" name="lastNameEdited:"/>
+                <relationship kind="action" name="saveNewStudent:"/>
+                <relationship kind="outlet" name="classNameInputField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="delegate"/>
+                <relationship kind="outlet" name="firstNameInputField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="lastNameInputField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="studentNameDisplay" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="FibricHomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FibricHomeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="rubricsTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="studentPropertyDisplay" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="studentsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -96,11 +96,11 @@
 			children = (
 				6A6FB4E116FCC0670093916F /* Home Screen */,
 				6A6FB4ED16FCC1E50093916F /* Create Student Screen */,
+				B06AB9021704C3C7005CC336 /* Create Objectives Screen */,
 				6A6FB4CA16FCBBBA0093916F /* FibricAppDelegate.h */,
 				6A6FB4CB16FCBBBA0093916F /* FibricAppDelegate.m */,
 				6A6FB4D316FCBBBA0093916F /* MainStoryboard_iPhone.storyboard */,
 				6A6FB4D616FCBBBA0093916F /* MainStoryboard_iPad.storyboard */,
-				B06AB9021704C3C7005CC336 /* Create Objectives Screen */,
 				6A6FB4C216FCBBBA0093916F /* Supporting Files */,
 			);
 			path = RubricAppMaribeth;

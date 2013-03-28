@@ -10,6 +10,9 @@
 #import "FibricStudent.h"
 #import "FibricCreateStudentViewController.h"
 
-@interface FibricHomeViewController : UIViewController <saveStudentDelegate>
+@interface FibricHomeViewController : UIViewController <saveStudentDelegate, UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *studentsTableView;
+@property (weak, nonatomic) IBOutlet UITableView *rubricsTableView;
 
 @end

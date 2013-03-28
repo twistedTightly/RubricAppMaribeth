@@ -23,12 +23,27 @@
 {
     [super viewDidLoad];
     
+    // set delegate and datasource for table views
+    [self.studentsTableView setDelegate:self];
+    [self.studentsTableView setDataSource:self];
+    
+    [self.rubricsTableView setDelegate:self];
+    [self.rubricsTableView setDataSource:self];
+    
+    NSLog(@"%@,%@", self.studentsTableView.delegate, self.studentsTableView.dataSource);
+    
+    
     // Changes the navigation bar's back item label
     self.navigationItem.backBarButtonItem =
     [[UIBarButtonItem alloc] initWithTitle:@"Cancel"
                                      style:UIBarButtonItemStyleBordered
                                     target:nil
                                     action:nil];
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [self.studentsTableView reloadData];
+    [self.rubricsTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,5 +91,62 @@
     self.studentPropertyDisplay.text = ((FibricStudent *)[self.students objectAtIndex:0]).studentFirstName;
     
 }
+
+#pragma mark - Tableview DataSource and Delegate Methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (tableView == self.studentsTableView) {
+        return [self.students count];
+    } else if (tableView == self.rubricsTableView) {
+        return [self.rubrics count];
+    } else {
+        return 0;
+    }
+    
+}
+
+
+- (NSString *)titleForStudentRow:(NSUInteger)row
+{
+    NSString *lastFirst = ((FibricStudent *)self.students[row]).studentLastName;
+    lastFirst = [lastFirst stringByAppendingString:@", "];
+    lastFirst = [lastFirst stringByAppendingString:((FibricStudent *)self.students[row]).studentFirstName];
+    NSLog(lastFirst);
+    return lastFirst;
+}
+
+- (NSString *)titleForRubricRow:(NSUInteger)row
+{
+    NSString *rubricTitle = self.rubrics[row];
+    
+    return rubricTitle;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+ 
+    if (!cell)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    // configure cell
+    if (tableView == self.studentsTableView) {
+        cell.textLabel.text = [self titleForStudentRow:indexPath.row];
+    } else if (tableView == self.rubricsTableView) {
+        cell.textLabel.text = [self titleForRubricRow:indexPath.row];
+    }
+    
+    return cell;
+}
+
 
 @end
