@@ -17,7 +17,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWC-Kh-X8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3381" y="22"/>
+            <point key="canvasLocation" x="-4003" y="-1570"/>
         </scene>
         <!--Fibric Home View Controller-->
         <scene sceneID="4">
@@ -49,6 +49,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="qy0-yg-WjH" kind="push" id="xMf-sX-jzn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWt-nk-vnM">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -76,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2192" y="22"/>
+            <point key="canvasLocation" x="-2830" y="-1442"/>
         </scene>
         <!--Fibric Create Student View Controller - Create or Edit a Student-->
         <scene sceneID="MMa-46-zuc">
@@ -149,7 +152,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="su8-99-97u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-947" y="-1015"/>
+            <point key="canvasLocation" x="-1569" y="-2013"/>
+        </scene>
+        <!--Fibric Create Objectives View Controller - Add Objectives to Rubric-->
+        <scene sceneID="oGl-jQ-thl">
+            <objects>
+                <tableViewController id="qy0-yg-WjH" customClass="FibricCreateObjectivesViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ja7-0h-ZeC">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="aD2-po-Rkl">
+                                <rect key="frame" x="0.0" y="22" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qy0-yg-WjH" id="DAp-yA-8mI"/>
+                            <outlet property="delegate" destination="qy0-yg-WjH" id="CxU-BF-nb4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Objectives to Rubric" id="ccr-Er-b5q"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2U-4s-MIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1569" y="-912"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

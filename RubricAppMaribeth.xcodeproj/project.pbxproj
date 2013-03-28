@@ -21,6 +21,7 @@
 		6A6FB4DB16FCBBBA0093916F /* FibricHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6FB4DA16FCBBBA0093916F /* FibricHomeViewController.m */; };
 		6A6FB4EC16FCC1DF0093916F /* FibricCreateStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6FB4EB16FCC1DF0093916F /* FibricCreateStudentViewController.m */; };
 		6A6FB4F016FCC72D0093916F /* FibricStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6FB4EF16FCC72D0093916F /* FibricStudent.m */; };
+		B06AB9011704C3C3005CC336 /* FibricCreateObjectivesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06AB9001704C3C3005CC336 /* FibricCreateObjectivesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		6A6FB4EB16FCC1DF0093916F /* FibricCreateStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FibricCreateStudentViewController.m; sourceTree = "<group>"; };
 		6A6FB4EE16FCC72D0093916F /* FibricStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FibricStudent.h; sourceTree = "<group>"; };
 		6A6FB4EF16FCC72D0093916F /* FibricStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FibricStudent.m; sourceTree = "<group>"; };
+		B06AB8FF1704C3C3005CC336 /* FibricCreateObjectivesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FibricCreateObjectivesViewController.h; sourceTree = "<group>"; };
+		B06AB9001704C3C3005CC336 /* FibricCreateObjectivesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FibricCreateObjectivesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 				6A6FB4CB16FCBBBA0093916F /* FibricAppDelegate.m */,
 				6A6FB4D316FCBBBA0093916F /* MainStoryboard_iPhone.storyboard */,
 				6A6FB4D616FCBBBA0093916F /* MainStoryboard_iPad.storyboard */,
+				B06AB9021704C3C7005CC336 /* Create Objectives Screen */,
 				6A6FB4C216FCBBBA0093916F /* Supporting Files */,
 			);
 			path = RubricAppMaribeth;
@@ -134,6 +138,15 @@
 				6A6FB4EF16FCC72D0093916F /* FibricStudent.m */,
 			);
 			name = "Create Student Screen";
+			sourceTree = "<group>";
+		};
+		B06AB9021704C3C7005CC336 /* Create Objectives Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B06AB8FF1704C3C3005CC336 /* FibricCreateObjectivesViewController.h */,
+				B06AB9001704C3C3005CC336 /* FibricCreateObjectivesViewController.m */,
+			);
+			name = "Create Objectives Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +222,7 @@
 				6A6FB4DB16FCBBBA0093916F /* FibricHomeViewController.m in Sources */,
 				6A6FB4EC16FCC1DF0093916F /* FibricCreateStudentViewController.m in Sources */,
 				6A6FB4F016FCC72D0093916F /* FibricStudent.m in Sources */,
+				B06AB9011704C3C3005CC336 /* FibricCreateObjectivesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +355,7 @@
 				6A6FB4E016FCBBBA0093916F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
